@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Users</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+        <link rel="stylesheet" href="../css/shards.min.css">  
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+ <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.min.css">
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+ 
+ <style type="text/css">
+.slider {
+	width: 95%;
+	margin: auto;
+	overflow: hidden;
+}
+.slider ul {
+	display: flex;
+	padding: 0;
+	width: 600%;
+	
+	animation: cambio 30s infinite alternate linear;
+}
+.slider li {
+	width: 150%;
+	list-style: none;
+}
+
+.slider img {
+	width: 100%;
+}
+
+@keyframes cambio {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+</style>
+    
+    </head>
+    <body style="background-color:#CCE1DE;">
+<br>
+    <body>
+    <center><img src="https://i.ibb.co/tDKk9RB/Whats-App-Image-2020-01-12-at-9-38-28-PM.jpg" WIDTH=1100 HEIGHT=200></center>
+        <div th:switch="${personas}" class="container my-5">
+            <div class="col-sm">
+            <img src="https://i.ibb.co/DQRhNtn/Altiora.jpg" align="left" WIDTH=100 HEIGHT=50>
+			<img src="https://i.ibb.co/nfbHFtg/carrito.jpg" alt="admin" align="right" WIDTH=75 HEIGHT=50></div>
+            <div class="col-sm">
+                
+                    <h1 th:case="null"><center>Aplicativo Web administración cliente articulo </center></h1>
+                    
+<div align="center"><font color="#FFFFFF" size="+1">
+  <marquee bgcolor="#C4C1BB" direction="right" loop="20">
+  <strong>"TU ALTERNATIVA MAS SEGURA"</strong></marquee></font></div>
+  <br>
+   <h6 style="color:#ff8000"><strong>Seleccione una opción:</strong></h6>
+   <br>
+<a class="btn btn-primary" href="/listar-cliente">Ver Clientes<i class="fas fa-glasses ml-2"></i></a>
+<a class="btn btn-primary" href="/listar-articulo">Ver Articulos<i class="far fa-eye ml-2"></i></a>
+<a href="/listar-orden" class="btn btn-primary">Ver Ordenes<i class="far fa-eye ml-2"></i></a>
+<a class="btn btn-primary" href="/listar-detalle">Ver Detalle<i class="far fa-eye ml-2"></i></a>
+<a class="btn btn-primary" href="/listar">Ver Pedidos<i class="far fa-eye ml-2"></i></a>
+ <br> <br>
+<div class="slider">
+<ul>
+<li><img src="https://i.ibb.co/GJGh1wD/3.jpg" HEIGHT=450 alt=""></li>
+<li><img src="https://i.ibb.co/6nTnMbB/4.jpg" HEIGHT=450 alt=""></li>
+<li><img src="https://i.ibb.co/3h8zyKw/compra.jpg" HEIGHT=450 alt=""></li>
+<li><img src="https://i.ibb.co/LkFvXny/compra2.jpg" HEIGHT=450 alt=""></li>
+<li><img src="https://i.ibb.co/GJGh1wD/3.jpg" HEIGHT=450 alt=""></li>
+<li><img src="https://i.ibb.co/6nTnMbB/4.jpg" HEIGHT=450 alt=""></li>
+<li><img src="https://i.ibb.co/3h8zyKw/compra.jpg" HEIGHT=450 alt=""></li>
+<li><img src="https://i.ibb.co/LkFvXny/compra2.jpg" HEIGHT=450 alt=""></li>
+<li><img src="https://i.ibb.co/GJGh1wD/3.jpg" HEIGHT=450 alt=""></li>
+<li><img src="https://i.ibb.co/6nTnMbB/4.jpg" HEIGHT=450 alt=""></li>
+<li><img src="https://i.ibb.co/GJGh1wD/3.jpg" HEIGHT=450 alt=""></li>
+<li><img src="https://i.ibb.co/6nTnMbB/4.jpg" HEIGHT=450 alt=""></li>
+</ul>
+</div>                  
+<h4 style="color:#ff8000"><strong>MISIÓN:</strong></h4>
+ <center><h5 style="color:black"><strong>Proveer un ambiente divertido y seguro donde los clientes disfruten de buen servicio con herrmaientas de calidad y a precios accesibles.</strong></h5></center>
+<h4 style="color:#ff8000"><strong>VISIÓN:</strong></h4>
+ <center><h5 style="color:black"><strong>Proveer la mejor experiencia del usuario cada día</strong></h5></center>                                                    
+                  
+                </div>
+            </div>
+    </body>
+</html>
